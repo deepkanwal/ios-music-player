@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5051" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="z2g-Na-RBm" customClass="ChorusAlbumsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z2g-Na-RBm" id="XvJ-lp-KcJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-hz-rNW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-ml-wyg" userLabel="albumTitleLabel">
+                                <rect key="frame" x="88" y="16" width="212" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkF-l5-5A9" userLabel="artistTitleLabel">
+                                <rect key="frame" x="88" y="37" width="212" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIX-5m-RrY" userLabel="detailsLabel">
+                                <rect key="frame" x="88" y="58" width="212" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhL-LK-g9X">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2d-Zf-487">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="N2d-Zf-487" secondAttribute="bottom" id="0d9-PA-Ehb"/>
+                                    <constraint firstItem="N2d-Zf-487" firstAttribute="top" secondItem="WhL-LK-g9X" secondAttribute="top" id="GDE-3l-sMs"/>
+                                    <constraint firstAttribute="height" constant="60" id="Hbg-IM-Xxa"/>
+                                    <constraint firstAttribute="trailing" secondItem="N2d-Zf-487" secondAttribute="trailing" id="QKt-a9-YD0"/>
+                                    <constraint firstItem="N2d-Zf-487" firstAttribute="leading" secondItem="WhL-LK-g9X" secondAttribute="leading" id="b7c-es-6ZY"/>
+                                    <constraint firstAttribute="width" constant="60" id="mhN-1N-ktU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="WhL-LK-g9X" secondAttribute="centerY" constant="-0.5" id="Tfg-H5-yjc"/>
+                            <constraint firstItem="WhL-LK-g9X" firstAttribute="leading" secondItem="PaR-hz-rNW" secondAttribute="leading" constant="15" id="Uce-Zr-WAd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PaR-hz-rNW" secondAttribute="trailing" id="3DM-ba-j2B"/>
+                    <constraint firstItem="PaR-hz-rNW" firstAttribute="top" secondItem="XvJ-lp-KcJ" secondAttribute="top" id="SvZ-52-xGi"/>
+                    <constraint firstItem="PaR-hz-rNW" firstAttribute="leading" secondItem="XvJ-lp-KcJ" secondAttribute="leading" id="tK3-xs-u1B"/>
+                    <constraint firstAttribute="bottom" secondItem="PaR-hz-rNW" secondAttribute="bottom" id="zqO-1S-52X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumArtContainerView" destination="WhL-LK-g9X" id="B2I-Ho-MY8"/>
+                <outlet property="albumArtImageView" destination="N2d-Zf-487" id="HHg-RX-SgQ"/>
+                <outlet property="albumTitleLabel" destination="cuW-ml-wyg" id="VOQ-Ba-5g4"/>
+                <outlet property="artistTitleLabel" destination="zkF-l5-5A9" id="6oS-zW-Kc5"/>
+                <outlet property="containerView" destination="PaR-hz-rNW" id="a7t-xJ-iBT"/>
+                <outlet property="detailsLabel" destination="CIX-5m-RrY" id="7YZ-O3-jne"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

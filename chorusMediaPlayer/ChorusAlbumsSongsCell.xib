@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5051" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fSp-z5-BMQ" customClass="ChorusAlbumsSongsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fSp-z5-BMQ" id="oZY-E2-3xP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mek-wX-1Zg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF3-cN-TCS" userLabel="trackNumberLabel">
+                                <rect key="frame" x="7" y="4" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HTT-s9-NUA"/>
+                                    <constraint firstAttribute="width" constant="36" id="h3w-ZL-P7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34:23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y35-Lr-I0Y" userLabel="trackDurationLabel">
+                                <rect key="frame" x="260" y="4" width="53" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="EII-DN-6mc"/>
+                                    <constraint firstAttribute="width" constant="53" id="u3k-z0-Vy3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlr-qA-Dad" userLabel="trackTitleLabel">
+                                <rect key="frame" x="51" y="4" width="201" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ddi-bl-Eju"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y35-Lr-I0Y" firstAttribute="leading" secondItem="jlr-qA-Dad" secondAttribute="trailing" constant="8" id="01w-bk-dVS"/>
+                            <constraint firstAttribute="trailing" secondItem="Y35-Lr-I0Y" secondAttribute="trailing" constant="7" id="Ip7-eK-RaL"/>
+                            <constraint firstItem="NF3-cN-TCS" firstAttribute="leading" secondItem="mek-wX-1Zg" secondAttribute="leading" constant="7" id="QwG-mK-L07"/>
+                            <constraint firstItem="jlr-qA-Dad" firstAttribute="leading" secondItem="NF3-cN-TCS" secondAttribute="trailing" constant="8" id="me2-8B-ZTf"/>
+                            <constraint firstAttribute="centerY" secondItem="jlr-qA-Dad" secondAttribute="centerY" constant="-0.5" id="vg5-TU-RtZ"/>
+                            <constraint firstAttribute="centerY" secondItem="Y35-Lr-I0Y" secondAttribute="centerY" constant="-0.5" id="vxp-H5-9CZ"/>
+                            <constraint firstAttribute="centerY" secondItem="NF3-cN-TCS" secondAttribute="centerY" constant="-0.5" id="wPc-2C-wFw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mek-wX-1Zg" firstAttribute="leading" secondItem="oZY-E2-3xP" secondAttribute="leading" id="BbU-yS-gO8"/>
+                    <constraint firstAttribute="bottom" secondItem="mek-wX-1Zg" secondAttribute="bottom" id="D46-c0-9rh"/>
+                    <constraint firstItem="mek-wX-1Zg" firstAttribute="top" secondItem="oZY-E2-3xP" secondAttribute="top" id="EBs-Oh-zK9"/>
+                    <constraint firstAttribute="trailing" secondItem="mek-wX-1Zg" secondAttribute="trailing" id="jbL-JW-HOv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="mek-wX-1Zg" id="I5o-Fh-GOz"/>
+                <outlet property="trackDurationLabel" destination="Y35-Lr-I0Y" id="wGD-JV-YQc"/>
+                <outlet property="trackNumberLabel" destination="NF3-cN-TCS" id="BqG-7M-N8O"/>
+                <outlet property="trackTitleLabel" destination="jlr-qA-Dad" id="PTH-RC-eB8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

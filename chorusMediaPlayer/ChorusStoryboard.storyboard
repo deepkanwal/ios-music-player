@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5051" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KDp-k0-1UJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Chorus Tab Bar Controller-->
+        <scene sceneID="Yfi-eR-Vk5">
+            <objects>
+                <tabBarController storyboardIdentifier="ChorusTabBarController" definesPresentationContext="YES" id="KDp-k0-1UJ" customClass="ChorusTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="T9d-i5-DSs">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aoJ-7Z-hyu" kind="relationship" relationship="viewControllers" id="usQ-iu-qMQ"/>
+                        <segue destination="WBX-S1-fUJ" kind="relationship" relationship="viewControllers" id="Yt2-Gj-XGy"/>
+                        <segue destination="TJ4-Qg-05h" kind="relationship" relationship="viewControllers" id="6RR-3P-bfW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27H-7s-rID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="93"/>
+        </scene>
+        <!--Navigation Controller - Songs-->
+        <scene sceneID="rOu-ew-e5P">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="TJ4-Qg-05h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Songs" id="DM1-Tu-S7G"/>
+                    <navigationItem key="navigationItem" id="SVg-Y1-gn4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="navbar" id="T8b-qw-WAD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Od-Fd-ypj" kind="relationship" relationship="rootViewController" id="8gg-59-GtG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dt7-CC-Gan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="-566"/>
+        </scene>
+        <!--Chorus Songs View Controller - Songs-->
+        <scene sceneID="GUc-ZZ-vJb">
+            <objects>
+                <viewController id="8Od-Fd-ypj" customClass="ChorusSongsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91Z-uf-bxQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qB9-Dw-Zzc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o5h-Pf-jCg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DvL-0Y-mXn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Od-Fd-ypj" id="g5W-2N-jQv"/>
+                                    <outlet property="delegate" destination="8Od-Fd-ypj" id="Vhc-7s-aog"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6c-XV-hE2" customClass="GDIIndexBar">
+                                <rect key="frame" x="300" y="0.0" width="20" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8Od-Fd-ypj" id="sTm-dS-TeR"/>
+                                    <outlet property="tableView" destination="DvL-0Y-mXn" id="RBp-bF-dT5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DvL-0Y-mXn" firstAttribute="leading" secondItem="o5h-Pf-jCg" secondAttribute="leading" id="F4u-Jz-IJE"/>
+                            <constraint firstAttribute="centerY" secondItem="DvL-0Y-mXn" secondAttribute="centerY" id="L4r-sr-AwS"/>
+                            <constraint firstItem="DvL-0Y-mXn" firstAttribute="top" secondItem="o5h-Pf-jCg" secondAttribute="top" id="VFD-zT-Cac"/>
+                            <constraint firstAttribute="bottom" secondItem="DvL-0Y-mXn" secondAttribute="bottom" id="YwA-ns-EDY"/>
+                            <constraint firstAttribute="centerX" secondItem="DvL-0Y-mXn" secondAttribute="centerX" id="pWo-qw-xBh"/>
+                            <constraint firstAttribute="trailing" secondItem="DvL-0Y-mXn" secondAttribute="trailing" id="y6s-Nr-Y2S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Songs" id="mse-Mo-DuC"/>
+                    <connections>
+                        <outlet property="indexBar" destination="Y6c-XV-hE2" id="hig-Lq-aZc"/>
+                        <outlet property="tableView" destination="DvL-0Y-mXn" id="Bo8-ih-YY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AF-R1-ytK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-566"/>
+        </scene>
+        <!--Chorus Now Playing View Controller-->
+        <scene sceneID="uy9-Yn-iGN">
+            <objects>
+                <viewController storyboardIdentifier="ChorusNowPlayingViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6WH-Qz-SYB" customClass="ChorusNowPlayingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AmM-fj-b5J"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ld-2r-Kjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bty-yh-aph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9c-H3-3lY" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view alpha="0.44999999999999962" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ef0-YF-BQT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-6G-EWI" userLabel="buttonsContainerView">
+                                        <rect key="frame" x="15" y="360" width="290" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM3-Bp-t2b" userLabel="previousButton">
+                                                <rect key="frame" x="20" y="10" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="prev">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="actionPreviousButtonPressed:" destination="6WH-Qz-SYB" eventType="touchUpInside" id="c7X-9G-9yt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-k3-xJR" userLabel="playPauseButton">
+                                                <rect key="frame" x="104" y="10" width="70" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="play">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="actionPlayPauseButtonPressed:" destination="6WH-Qz-SYB" eventType="touchUpInside" id="tL8-23-vOe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-ab-QCJ" userLabel="nextButton">
+                                                <rect key="frame" x="240" y="10" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="actionNextButtonPressed:" destination="6WH-Qz-SYB" eventType="touchUpInside" id="95A-VE-cFH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59E-tn-R2z">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="322"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avC-IW-d9r">
+                                                <rect key="frame" x="20" y="37" width="280" height="285"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-RP-CLU" userLabel="trackLabel">
+                                                <rect key="frame" x="30" y="276" width="261" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-nv-yw9" userLabel="detailsLabel">
+                                                <rect key="frame" x="43" y="11" width="235" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-Zp-mXc">
+                                        <rect key="frame" x="268" y="20" width="51" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="8h1-ux-EBm"/>
+                                            <constraint firstAttribute="height" constant="43" id="dMV-2m-se9"/>
+                                        </constraints>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionDismissButtonPressed:" destination="6WH-Qz-SYB" eventType="touchUpInside" id="hT9-lT-V3z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cdE-Zp-mXc" firstAttribute="top" secondItem="ef0-YF-BQT" secondAttribute="top" constant="20" id="HD9-EL-sJ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="cdE-Zp-mXc" secondAttribute="trailing" constant="1" id="U22-Dy-m51"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ef0-YF-BQT" secondAttribute="trailing" id="Ss0-Gj-jod"/>
+                            <constraint firstItem="ef0-YF-BQT" firstAttribute="leading" secondItem="Bty-yh-aph" secondAttribute="leading" id="X7K-6q-rBA"/>
+                            <constraint firstItem="9Ld-2r-Kjv" firstAttribute="top" secondItem="X9c-H3-3lY" secondAttribute="bottom" id="ZhT-zp-Bzo"/>
+                            <constraint firstAttribute="trailing" secondItem="X9c-H3-3lY" secondAttribute="trailing" id="ack-qy-nNg"/>
+                            <constraint firstItem="9Ld-2r-Kjv" firstAttribute="top" secondItem="ef0-YF-BQT" secondAttribute="bottom" id="coB-HD-mNa"/>
+                            <constraint firstItem="X9c-H3-3lY" firstAttribute="top" secondItem="Bty-yh-aph" secondAttribute="top" id="g1M-uJ-wLA"/>
+                            <constraint firstItem="ef0-YF-BQT" firstAttribute="top" secondItem="Bty-yh-aph" secondAttribute="top" id="ivD-3V-cHO"/>
+                            <constraint firstItem="X9c-H3-3lY" firstAttribute="leading" secondItem="Bty-yh-aph" secondAttribute="leading" id="ndc-VG-C6e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KvW-Zy-LHi"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="albumArtImageView" destination="avC-IW-d9r" id="K4h-dG-Fb1"/>
+                        <outlet property="backgroundImageView" destination="X9c-H3-3lY" id="6Ad-Op-h0n"/>
+                        <outlet property="detailsLabel" destination="dUu-RP-CLU" id="EGW-OF-oqc"/>
+                        <outlet property="nextButton" destination="Fxw-ab-QCJ" id="25T-HW-wOq"/>
+                        <outlet property="playPauseButton" destination="6rC-k3-xJR" id="Xi9-na-eaE"/>
+                        <outlet property="previousButton" destination="qM3-Bp-t2b" id="skO-0I-i4z"/>
+                        <outlet property="trackTitleLabel" destination="SdL-nv-yw9" id="nzP-hp-ZCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohE-L3-LmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="-300"/>
+        </scene>
+        <!--Navigation Controller - Artists-->
+        <scene sceneID="jyP-7i-6Rh">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="aoJ-7Z-hyu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artists" id="6hv-7e-dNu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h6k-5z-CN7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hjO-Iy-mE4" kind="relationship" relationship="rootViewController" id="7pK-ON-7C0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yM8-Sj-hYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="93"/>
+        </scene>
+        <!--Navigation Controller - Albums-->
+        <scene sceneID="LBt-Xs-Sg6">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="WBX-S1-fUJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Albums" id="YXM-Jh-6Vp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ubE-lw-K3e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oTr-d2-GPQ" kind="relationship" relationship="rootViewController" id="Ju5-IZ-PrU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpb-oD-6Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="755"/>
+        </scene>
+        <!--Chorus Artists View Controller - Artists-->
+        <scene sceneID="zsS-O5-w81">
+            <objects>
+                <viewController id="hjO-Iy-mE4" customClass="ChorusArtistsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="URd-ge-OaR"/>
+                        <viewControllerLayoutGuide type="bottom" id="W8f-uY-GwV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wFG-hm-6rr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Eix-Gt-lIy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hjO-Iy-mE4" id="BRO-wV-Hy0"/>
+                                    <outlet property="delegate" destination="hjO-Iy-mE4" id="52F-9b-pdX"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QV1-Fh-dMs" customClass="GDIIndexBar">
+                                <rect key="frame" x="300" y="0.0" width="20" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hjO-Iy-mE4" id="QIc-lt-jHM"/>
+                                    <outlet property="tableView" destination="Eix-Gt-lIy" id="68Q-l8-ujI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Eix-Gt-lIy" secondAttribute="centerX" id="33r-OS-ngy"/>
+                            <constraint firstAttribute="centerY" secondItem="Eix-Gt-lIy" secondAttribute="centerY" id="Kcp-E8-Hdj"/>
+                            <constraint firstAttribute="bottom" secondItem="Eix-Gt-lIy" secondAttribute="bottom" id="LpN-R7-8yz"/>
+                            <constraint firstAttribute="trailing" secondItem="Eix-Gt-lIy" secondAttribute="trailing" id="QcC-U3-jo2"/>
+                            <constraint firstItem="Eix-Gt-lIy" firstAttribute="top" secondItem="wFG-hm-6rr" secondAttribute="top" id="RAr-GW-XdR"/>
+                            <constraint firstItem="Eix-Gt-lIy" firstAttribute="leading" secondItem="wFG-hm-6rr" secondAttribute="leading" id="SiW-u3-35Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="ma1-85-7gT"/>
+                    <connections>
+                        <outlet property="indexBar" destination="QV1-Fh-dMs" id="ds8-bl-5H3"/>
+                        <outlet property="tableView" destination="Eix-Gt-lIy" id="dXA-u4-XYS"/>
+                        <segue destination="ZTh-fw-0Od" kind="push" identifier="kSegueArtistsToAlbums" id="A0k-BP-8p6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEE-kk-mlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="93"/>
+        </scene>
+        <!--Chorus Albums View Controller - Albums-->
+        <scene sceneID="ln2-wZ-Myk">
+            <objects>
+                <viewController id="oTr-d2-GPQ" customClass="ChorusAlbumsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pwv-aT-VzL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ziD-3P-TvL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xH-lg-zYn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rSV-wi-EKU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oTr-d2-GPQ" id="T2k-8A-SXQ"/>
+                                    <outlet property="delegate" destination="oTr-d2-GPQ" id="PU1-EA-tpe"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-ya-r4c" customClass="GDIIndexBar">
+                                <rect key="frame" x="300" y="0.0" width="20" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTr-d2-GPQ" id="q33-Qd-2Gm"/>
+                                    <outlet property="tableView" destination="rSV-wi-EKU" id="uKW-Bx-GLO"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rSV-wi-EKU" firstAttribute="leading" secondItem="6xH-lg-zYn" secondAttribute="leading" id="9lR-a7-NMv"/>
+                            <constraint firstAttribute="bottom" secondItem="rSV-wi-EKU" secondAttribute="bottom" id="Ftn-NK-xwW"/>
+                            <constraint firstAttribute="centerX" secondItem="rSV-wi-EKU" secondAttribute="centerX" id="PVl-5s-uZv"/>
+                            <constraint firstAttribute="centerY" secondItem="rSV-wi-EKU" secondAttribute="centerY" id="Xom-yZ-x7H"/>
+                            <constraint firstAttribute="trailing" secondItem="rSV-wi-EKU" secondAttribute="trailing" id="k9k-gf-ZN1"/>
+                            <constraint firstItem="rSV-wi-EKU" firstAttribute="top" secondItem="6xH-lg-zYn" secondAttribute="top" id="lYg-LL-5Y5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Albums" id="kU6-e0-ckc"/>
+                    <connections>
+                        <outlet property="indexBar" destination="ACM-ya-r4c" id="Tff-vW-kCZ"/>
+                        <outlet property="tableView" destination="rSV-wi-EKU" id="Npv-kr-hkh"/>
+                        <segue destination="ZTh-fw-0Od" kind="push" identifier="kSegueAlbumsToSongs" id="t9I-xM-s5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8I3-J4-KJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="755"/>
+        </scene>
+        <!--Chorus Albums Songs View Controller-->
+        <scene sceneID="Jka-90-ebE">
+            <objects>
+                <viewController id="ZTh-fw-0Od" customClass="ChorusAlbumsSongsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LO0-X0-qfb"/>
+                        <viewControllerLayoutGuide type="bottom" id="JZV-JD-NUR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmg-h0-N6C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-II-6Ot">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZTh-fw-0Od" id="sCT-Yd-zLk"/>
+                                    <outlet property="delegate" destination="ZTh-fw-0Od" id="fpR-se-oIu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="PFV-II-6Ot" secondAttribute="centerY" id="3Ah-cY-p1H"/>
+                            <constraint firstItem="PFV-II-6Ot" firstAttribute="leading" secondItem="pmg-h0-N6C" secondAttribute="leading" id="7lv-7b-qwX"/>
+                            <constraint firstAttribute="trailing" secondItem="PFV-II-6Ot" secondAttribute="trailing" id="FE6-1W-i0o"/>
+                            <constraint firstAttribute="centerX" secondItem="PFV-II-6Ot" secondAttribute="centerX" id="Zpt-nH-ttx"/>
+                            <constraint firstItem="PFV-II-6Ot" firstAttribute="top" secondItem="pmg-h0-N6C" secondAttribute="top" id="aZR-EU-cts"/>
+                            <constraint firstAttribute="bottom" secondItem="PFV-II-6Ot" secondAttribute="bottom" id="kFx-fg-fME"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KqC-de-hLe"/>
+                    <connections>
+                        <outlet property="tableView" destination="PFV-II-6Ot" id="BlQ-sH-L6C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="St5-Ee-Ejg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar" width="2" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="A0k-BP-8p6"/>
+    </inferredMetricsTieBreakers>
+</document>

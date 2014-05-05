@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910A60D418B28407001F7CCA /* ChorusAlbumsSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 910A60D318B28407001F7CCA /* ChorusAlbumsSongsCell.m */; };
+		910A60D618B28418001F7CCA /* ChorusAlbumsSongsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910A60D518B28418001F7CCA /* ChorusAlbumsSongsCell.xib */; };
+		910A60D918B28F31001F7CCA /* ChorusAlbumSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 910A60D818B28F31001F7CCA /* ChorusAlbumSectionHeader.m */; };
+		910A60DB18B28F45001F7CCA /* ChorusAlbumSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910A60DA18B28F45001F7CCA /* ChorusAlbumSectionHeader.xib */; };
+		9124454518BA712F00B26C06 /* ChorusLastFMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9124454418BA712F00B26C06 /* ChorusLastFMUtility.m */; };
+		91431C8518B07AC60031435C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91431C8418B07AC60031435C /* Crashlytics.framework */; };
+		91431C8A18B11F930031435C /* ChorusNowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91431C8918B11F930031435C /* ChorusNowPlayingViewController.m */; };
+		91431C8E18B13C630031435C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2B0C18A87CAC00A9112A /* MediaPlayer.framework */; };
+		91431C9218B13C6E0031435C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91431C9118B13C6E0031435C /* CoreMedia.framework */; };
+		915C07B118B9318A00AFE3C4 /* ChorusBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C07B018B9318A00AFE3C4 /* ChorusBaseTableViewCell.m */; };
+		915C07B718B9867E00AFE3C4 /* ChorusWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C07B618B9867E00AFE3C4 /* ChorusWebViewController.m */; };
+		915C07BA18B9B8F800AFE3C4 /* ChorusTopBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C07B918B9B8F800AFE3C4 /* ChorusTopBarViewController.m */; };
+		915C07BD18B9BC7B00AFE3C4 /* ChorusContainerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C07BC18B9BC7B00AFE3C4 /* ChorusContainerSegue.m */; };
+		915C07C318B9BFE200AFE3C4 /* ChorusContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C07C218B9BFE200AFE3C4 /* ChorusContainerViewController.m */; };
+		916A006E18AFFC4900AAB3DE /* ChorusBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A006D18AFFC4900AAB3DE /* ChorusBaseTableViewController.m */; };
+		916A007118B0089900AAB3DE /* ChorusAlbumsSongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A007018B0089900AAB3DE /* ChorusAlbumsSongsViewController.m */; };
+		918A2AB718A6C69600A9112A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2AB618A6C69600A9112A /* Foundation.framework */; };
+		918A2AB918A6C69600A9112A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2AB818A6C69600A9112A /* CoreGraphics.framework */; };
+		918A2ABB18A6C69600A9112A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2ABA18A6C69600A9112A /* UIKit.framework */; };
+		918A2AC118A6C69600A9112A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 918A2ABF18A6C69600A9112A /* InfoPlist.strings */; };
+		918A2AC318A6C69600A9112A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AC218A6C69600A9112A /* main.m */; };
+		918A2AC718A6C69600A9112A /* ChorusAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AC618A6C69600A9112A /* ChorusAppDelegate.m */; };
+		918A2AC918A6C69600A9112A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918A2AC818A6C69600A9112A /* Images.xcassets */; };
+		918A2AD018A6C69600A9112A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2ACF18A6C69600A9112A /* XCTest.framework */; };
+		918A2AD118A6C69600A9112A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2AB618A6C69600A9112A /* Foundation.framework */; };
+		918A2AD218A6C69600A9112A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A2ABA18A6C69600A9112A /* UIKit.framework */; };
+		918A2ADA18A6C69600A9112A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 918A2AD818A6C69600A9112A /* InfoPlist.strings */; };
+		918A2ADC18A6C69600A9112A /* chorusTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2ADB18A6C69600A9112A /* chorusTestTests.m */; };
+		918A2AE718A6C6D800A9112A /* ChorusStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918A2AE618A6C6D800A9112A /* ChorusStoryboard.storyboard */; };
+		918A2AEC18A6D42100A9112A /* ChorusBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AEB18A6D42100A9112A /* ChorusBaseViewController.m */; };
+		918A2AEF18A6D45D00A9112A /* ChorusSongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AEE18A6D45D00A9112A /* ChorusSongsViewController.m */; };
+		918A2AF618A7036800A9112A /* ChorusArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AF518A7036800A9112A /* ChorusArtistsViewController.m */; };
+		918A2AF918A703EB00A9112A /* ChorusAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AF818A703EB00A9112A /* ChorusAlbumsViewController.m */; };
+		918A2AFC18A714B700A9112A /* ChorusTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AFB18A714B700A9112A /* ChorusTabBarController.m */; };
+		918A2AFF18A714F000A9112A /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2AFE18A714F000A9112A /* UIView+Animations.m */; };
+		918A2B0318A7155C00A9112A /* UIView+Frames.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2B0218A7155C00A9112A /* UIView+Frames.m */; };
+		918A2B1318AB114300A9112A /* ChorusMediaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 918A2B1218AB114300A9112A /* ChorusMediaUtility.m */; };
+		91D9108C18B171F300D2F503 /* ChorusSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D9108B18B171F300D2F503 /* ChorusSongsCell.m */; };
+		91D9108E18B1720600D2F503 /* ChorusSongsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D9108D18B1720600D2F503 /* ChorusSongsCell.xib */; };
+		91D9109A18B1A7B400D2F503 /* UINavigationController+ViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D9109918B1A7B400D2F503 /* UINavigationController+ViewControllers.m */; };
+		91D910A018B1ADF100D2F503 /* ChorusUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D9109F18B1ADF100D2F503 /* ChorusUIUtility.m */; };
+		91D910A318B1AF7E00D2F503 /* ChorusIndexSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D910A218B1AF7E00D2F503 /* ChorusIndexSectionHeader.m */; };
+		91D910A618B1B2BF00D2F503 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D910A518B1B2BF00D2F503 /* UIColor+Extensions.m */; };
+		91D910A818B1B95900D2F503 /* ChorusIndexSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D910A718B1B95900D2F503 /* ChorusIndexSectionHeader.xib */; };
+		91D910AB18B1D69D00D2F503 /* ChorusAlbumsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D910AA18B1D69D00D2F503 /* ChorusAlbumsCell.m */; };
+		91D910AD18B1D6DE00D2F503 /* ChorusAlbumsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D910AC18B1D6DE00D2F503 /* ChorusAlbumsCell.xib */; };
+		91D910B018B268F300D2F503 /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D910AF18B268F300D2F503 /* UIView+Effects.m */; };
+		91F5C19318B2E4EE00DF9D27 /* ChorusArtistsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F5C19118B2E4EE00DF9D27 /* ChorusArtistsCell.m */; };
+		91F5C19418B2E4EE00DF9D27 /* ChorusArtistsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F5C19218B2E4EE00DF9D27 /* ChorusArtistsCell.xib */; };
+		91F5C19718B59BCA00DF9D27 /* ChorusNowPlayingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F5C19618B59BCA00DF9D27 /* ChorusNowPlayingSegue.m */; };
+		E8192450F96B4C3C9A7397F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2FBC53FA8F4D8FA9498889 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		918A2AD318A6C69600A9112A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 918A2AAB18A6C69600A9112A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 918A2AB218A6C69600A9112A;
+			remoteInfo = chorusTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BCAB17C734D452192875C3D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		910A60D218B28407001F7CCA /* ChorusAlbumsSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusAlbumsSongsCell.h; sourceTree = "<group>"; };
+		910A60D318B28407001F7CCA /* ChorusAlbumsSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusAlbumsSongsCell.m; sourceTree = "<group>"; };
+		910A60D518B28418001F7CCA /* ChorusAlbumsSongsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusAlbumsSongsCell.xib; sourceTree = "<group>"; };
+		910A60D718B28F31001F7CCA /* ChorusAlbumSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusAlbumSectionHeader.h; sourceTree = "<group>"; };
+		910A60D818B28F31001F7CCA /* ChorusAlbumSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusAlbumSectionHeader.m; sourceTree = "<group>"; };
+		910A60DA18B28F45001F7CCA /* ChorusAlbumSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusAlbumSectionHeader.xib; sourceTree = "<group>"; };
+		9124454318BA712F00B26C06 /* ChorusLastFMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusLastFMUtility.h; sourceTree = "<group>"; };
+		9124454418BA712F00B26C06 /* ChorusLastFMUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusLastFMUtility.m; sourceTree = "<group>"; };
+		91431C8418B07AC60031435C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		91431C8818B11F930031435C /* ChorusNowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusNowPlayingViewController.h; sourceTree = "<group>"; };
+		91431C8918B11F930031435C /* ChorusNowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusNowPlayingViewController.m; sourceTree = "<group>"; };
+		91431C9118B13C6E0031435C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		915C07AF18B9318A00AFE3C4 /* ChorusBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusBaseTableViewCell.h; sourceTree = "<group>"; };
+		915C07B018B9318A00AFE3C4 /* ChorusBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusBaseTableViewCell.m; sourceTree = "<group>"; };
+		915C07B518B9867E00AFE3C4 /* ChorusWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusWebViewController.h; sourceTree = "<group>"; };
+		915C07B618B9867E00AFE3C4 /* ChorusWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusWebViewController.m; sourceTree = "<group>"; };
+		915C07B818B9B8F800AFE3C4 /* ChorusTopBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusTopBarViewController.h; sourceTree = "<group>"; };
+		915C07B918B9B8F800AFE3C4 /* ChorusTopBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusTopBarViewController.m; sourceTree = "<group>"; };
+		915C07BB18B9BC7B00AFE3C4 /* ChorusContainerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusContainerSegue.h; sourceTree = "<group>"; };
+		915C07BC18B9BC7B00AFE3C4 /* ChorusContainerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusContainerSegue.m; sourceTree = "<group>"; };
+		915C07C118B9BFE200AFE3C4 /* ChorusContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusContainerViewController.h; sourceTree = "<group>"; };
+		915C07C218B9BFE200AFE3C4 /* ChorusContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusContainerViewController.m; sourceTree = "<group>"; };
+		916A006C18AFFC4900AAB3DE /* ChorusBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusBaseTableViewController.h; sourceTree = "<group>"; };
+		916A006D18AFFC4900AAB3DE /* ChorusBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusBaseTableViewController.m; sourceTree = "<group>"; };
+		916A006F18B0089900AAB3DE /* ChorusAlbumsSongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusAlbumsSongsViewController.h; sourceTree = "<group>"; };
+		916A007018B0089900AAB3DE /* ChorusAlbumsSongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusAlbumsSongsViewController.m; sourceTree = "<group>"; };
+		918A2AB318A6C69600A9112A /* chorusMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chorusMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		918A2AB618A6C69600A9112A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		918A2AB818A6C69600A9112A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		918A2ABA18A6C69600A9112A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		918A2ABE18A6C69600A9112A /* chorusMediaPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chorusMediaPlayer-Info.plist"; sourceTree = "<group>"; };
+		918A2AC018A6C69600A9112A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		918A2AC218A6C69600A9112A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		918A2AC418A6C69600A9112A /* chorusMediaPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chorusMediaPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		918A2AC518A6C69600A9112A /* ChorusAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChorusAppDelegate.h; sourceTree = "<group>"; };
+		918A2AC618A6C69600A9112A /* ChorusAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChorusAppDelegate.m; sourceTree = "<group>"; };
+		918A2AC818A6C69600A9112A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		918A2ACE18A6C69600A9112A /* chorusMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chorusMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		918A2ACF18A6C69600A9112A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		918A2AD718A6C69600A9112A /* chorusMediaPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chorusMediaPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		918A2AD918A6C69600A9112A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		918A2ADB18A6C69600A9112A /* chorusTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chorusTestTests.m; sourceTree = "<group>"; };
+		918A2AE618A6C6D800A9112A /* ChorusStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChorusStoryboard.storyboard; sourceTree = "<group>"; };
+		918A2AEA18A6D42100A9112A /* ChorusBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusBaseViewController.h; sourceTree = "<group>"; };
+		918A2AEB18A6D42100A9112A /* ChorusBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusBaseViewController.m; sourceTree = "<group>"; };
+		918A2AED18A6D45D00A9112A /* ChorusSongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusSongsViewController.h; sourceTree = "<group>"; };
+		918A2AEE18A6D45D00A9112A /* ChorusSongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusSongsViewController.m; sourceTree = "<group>"; };
+		918A2AF418A7036800A9112A /* ChorusArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusArtistsViewController.h; sourceTree = "<group>"; };
+		918A2AF518A7036800A9112A /* ChorusArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusArtistsViewController.m; sourceTree = "<group>"; };
+		918A2AF718A703EB00A9112A /* ChorusAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusAlbumsViewController.h; sourceTree = "<group>"; };
+		918A2AF818A703EB00A9112A /* ChorusAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusAlbumsViewController.m; sourceTree = "<group>"; };
+		918A2AFA18A714B700A9112A /* ChorusTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusTabBarController.h; sourceTree = "<group>"; };
+		918A2AFB18A714B700A9112A /* ChorusTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusTabBarController.m; sourceTree = "<group>"; };
+		918A2AFD18A714F000A9112A /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		918A2AFE18A714F000A9112A /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
+		918A2B0118A7155C00A9112A /* UIView+Frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frames.h"; sourceTree = "<group>"; };
+		918A2B0218A7155C00A9112A /* UIView+Frames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frames.m"; sourceTree = "<group>"; };
+		918A2B0418A717AA00A9112A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		918A2B0C18A87CAC00A9112A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		918A2B1118AB114300A9112A /* ChorusMediaUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusMediaUtility.h; sourceTree = "<group>"; };
+		918A2B1218AB114300A9112A /* ChorusMediaUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusMediaUtility.m; sourceTree = "<group>"; };
+		91D9108A18B171F300D2F503 /* ChorusSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusSongsCell.h; sourceTree = "<group>"; };
+		91D9108B18B171F300D2F503 /* ChorusSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusSongsCell.m; sourceTree = "<group>"; };
+		91D9108D18B1720600D2F503 /* ChorusSongsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusSongsCell.xib; sourceTree = "<group>"; };
+		91D9109818B1A7B400D2F503 /* UINavigationController+ViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ViewControllers.h"; sourceTree = "<group>"; };
+		91D9109918B1A7B400D2F503 /* UINavigationController+ViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ViewControllers.m"; sourceTree = "<group>"; };
+		91D9109E18B1ADF100D2F503 /* ChorusUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusUIUtility.h; sourceTree = "<group>"; };
+		91D9109F18B1ADF100D2F503 /* ChorusUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusUIUtility.m; sourceTree = "<group>"; };
+		91D910A118B1AF7E00D2F503 /* ChorusIndexSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusIndexSectionHeader.h; sourceTree = "<group>"; };
+		91D910A218B1AF7E00D2F503 /* ChorusIndexSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusIndexSectionHeader.m; sourceTree = "<group>"; };
+		91D910A418B1B2BF00D2F503 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		91D910A518B1B2BF00D2F503 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		91D910A718B1B95900D2F503 /* ChorusIndexSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusIndexSectionHeader.xib; sourceTree = "<group>"; };
+		91D910A918B1D69D00D2F503 /* ChorusAlbumsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusAlbumsCell.h; sourceTree = "<group>"; };
+		91D910AA18B1D69D00D2F503 /* ChorusAlbumsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusAlbumsCell.m; sourceTree = "<group>"; };
+		91D910AC18B1D6DE00D2F503 /* ChorusAlbumsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusAlbumsCell.xib; sourceTree = "<group>"; };
+		91D910AE18B268F300D2F503 /* UIView+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Effects.h"; sourceTree = "<group>"; };
+		91D910AF18B268F300D2F503 /* UIView+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Effects.m"; sourceTree = "<group>"; };
+		91F5C19018B2E4EE00DF9D27 /* ChorusArtistsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusArtistsCell.h; sourceTree = "<group>"; };
+		91F5C19118B2E4EE00DF9D27 /* ChorusArtistsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusArtistsCell.m; sourceTree = "<group>"; };
+		91F5C19218B2E4EE00DF9D27 /* ChorusArtistsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChorusArtistsCell.xib; sourceTree = "<group>"; };
+		91F5C19518B59BCA00DF9D27 /* ChorusNowPlayingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChorusNowPlayingSegue.h; sourceTree = "<group>"; };
+		91F5C19618B59BCA00DF9D27 /* ChorusNowPlayingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChorusNowPlayingSegue.m; sourceTree = "<group>"; };
+		FD2FBC53FA8F4D8FA9498889 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		918A2AB018A6C69600A9112A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91431C9218B13C6E0031435C /* CoreMedia.framework in Frameworks */,
+				91431C8E18B13C630031435C /* MediaPlayer.framework in Frameworks */,
+				918A2AB918A6C69600A9112A /* CoreGraphics.framework in Frameworks */,
+				91431C8518B07AC60031435C /* Crashlytics.framework in Frameworks */,
+				918A2ABB18A6C69600A9112A /* UIKit.framework in Frameworks */,
+				918A2AB718A6C69600A9112A /* Foundation.framework in Frameworks */,
+				E8192450F96B4C3C9A7397F3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		918A2ACB18A6C69600A9112A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918A2AD018A6C69600A9112A /* XCTest.framework in Frameworks */,
+				918A2AD218A6C69600A9112A /* UIKit.framework in Frameworks */,
+				918A2AD118A6C69600A9112A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		918A2AAA18A6C69600A9112A = {
+			isa = PBXGroup;
+			children = (
+				918A2ABC18A6C69600A9112A /* chorusMediaPlayer */,
+				918A2AD518A6C69600A9112A /* chorusMediaPlayerTests */,
+				918A2AB518A6C69600A9112A /* Frameworks */,
+				918A2AB418A6C69600A9112A /* Products */,
+				1BCAB17C734D452192875C3D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		918A2AB418A6C69600A9112A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				918A2AB318A6C69600A9112A /* chorusMediaPlayer.app */,
+				918A2ACE18A6C69600A9112A /* chorusMediaPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		918A2AB518A6C69600A9112A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91431C9118B13C6E0031435C /* CoreMedia.framework */,
+				91431C8418B07AC60031435C /* Crashlytics.framework */,
+				918A2B0C18A87CAC00A9112A /* MediaPlayer.framework */,
+				918A2AB618A6C69600A9112A /* Foundation.framework */,
+				918A2AB818A6C69600A9112A /* CoreGraphics.framework */,
+				918A2ABA18A6C69600A9112A /* UIKit.framework */,
+				918A2ACF18A6C69600A9112A /* XCTest.framework */,
+				FD2FBC53FA8F4D8FA9498889 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		918A2ABC18A6C69600A9112A /* chorusMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				918A2B0418A717AA00A9112A /* Constants.h */,
+				918A2B0018A714FA00A9112A /* Categories */,
+				918A2AF018A6ED1500A9112A /* Utilities */,
+				918A2B0818A806AE00A9112A /* Models */,
+				91D9108918B171D300D2F503 /* Views */,
+				918A2AE918A6D3FB00A9112A /* ViewControllers */,
+				918A2AE518A6C6C000A9112A /* Storyboards */,
+				918A2AC518A6C69600A9112A /* ChorusAppDelegate.h */,
+				918A2AC618A6C69600A9112A /* ChorusAppDelegate.m */,
+				918A2AC818A6C69600A9112A /* Images.xcassets */,
+				918A2ABD18A6C69600A9112A /* Supporting Files */,
+			);
+			path = chorusMediaPlayer;
+			sourceTree = "<group>";
+		};
+		918A2ABD18A6C69600A9112A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				918A2ABE18A6C69600A9112A /* chorusMediaPlayer-Info.plist */,
+				918A2ABF18A6C69600A9112A /* InfoPlist.strings */,
+				918A2AC218A6C69600A9112A /* main.m */,
+				918A2AC418A6C69600A9112A /* chorusMediaPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		918A2AD518A6C69600A9112A /* chorusMediaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				918A2ADB18A6C69600A9112A /* chorusTestTests.m */,
+				918A2AD618A6C69600A9112A /* Supporting Files */,
+			);
+			path = chorusMediaPlayerTests;
+			sourceTree = "<group>";
+		};
+		918A2AD618A6C69600A9112A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				918A2AD718A6C69600A9112A /* chorusMediaPlayerTests-Info.plist */,
+				918A2AD818A6C69600A9112A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		918A2AE518A6C6C000A9112A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				918A2AE618A6C6D800A9112A /* ChorusStoryboard.storyboard */,
+				91F5C19518B59BCA00DF9D27 /* ChorusNowPlayingSegue.h */,
+				91F5C19618B59BCA00DF9D27 /* ChorusNowPlayingSegue.m */,
+				915C07BB18B9BC7B00AFE3C4 /* ChorusContainerSegue.h */,
+				915C07BC18B9BC7B00AFE3C4 /* ChorusContainerSegue.m */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		918A2AE918A6D3FB00A9112A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				918A2AEA18A6D42100A9112A /* ChorusBaseViewController.h */,
+				918A2AEB18A6D42100A9112A /* ChorusBaseViewController.m */,
+				918A2AED18A6D45D00A9112A /* ChorusSongsViewController.h */,
+				918A2AEE18A6D45D00A9112A /* ChorusSongsViewController.m */,
+				918A2AF418A7036800A9112A /* ChorusArtistsViewController.h */,
+				918A2AF518A7036800A9112A /* ChorusArtistsViewController.m */,
+				918A2AF718A703EB00A9112A /* ChorusAlbumsViewController.h */,
+				918A2AF818A703EB00A9112A /* ChorusAlbumsViewController.m */,
+				918A2AFA18A714B700A9112A /* ChorusTabBarController.h */,
+				918A2AFB18A714B700A9112A /* ChorusTabBarController.m */,
+				916A006C18AFFC4900AAB3DE /* ChorusBaseTableViewController.h */,
+				916A006D18AFFC4900AAB3DE /* ChorusBaseTableViewController.m */,
+				916A006F18B0089900AAB3DE /* ChorusAlbumsSongsViewController.h */,
+				916A007018B0089900AAB3DE /* ChorusAlbumsSongsViewController.m */,
+				91431C8818B11F930031435C /* ChorusNowPlayingViewController.h */,
+				91431C8918B11F930031435C /* ChorusNowPlayingViewController.m */,
+				915C07B518B9867E00AFE3C4 /* ChorusWebViewController.h */,
+				915C07B618B9867E00AFE3C4 /* ChorusWebViewController.m */,
+				915C07B818B9B8F800AFE3C4 /* ChorusTopBarViewController.h */,
+				915C07B918B9B8F800AFE3C4 /* ChorusTopBarViewController.m */,
+				915C07C118B9BFE200AFE3C4 /* ChorusContainerViewController.h */,
+				915C07C218B9BFE200AFE3C4 /* ChorusContainerViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		918A2AF018A6ED1500A9112A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				918A2B1118AB114300A9112A /* ChorusMediaUtility.h */,
+				918A2B1218AB114300A9112A /* ChorusMediaUtility.m */,
+				91D9109E18B1ADF100D2F503 /* ChorusUIUtility.h */,
+				91D9109F18B1ADF100D2F503 /* ChorusUIUtility.m */,
+				9124454318BA712F00B26C06 /* ChorusLastFMUtility.h */,
+				9124454418BA712F00B26C06 /* ChorusLastFMUtility.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		918A2B0018A714FA00A9112A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				91D9109818B1A7B400D2F503 /* UINavigationController+ViewControllers.h */,
+				91D9109918B1A7B400D2F503 /* UINavigationController+ViewControllers.m */,
+				918A2AFD18A714F000A9112A /* UIView+Animations.h */,
+				918A2AFE18A714F000A9112A /* UIView+Animations.m */,
+				918A2B0118A7155C00A9112A /* UIView+Frames.h */,
+				918A2B0218A7155C00A9112A /* UIView+Frames.m */,
+				91D910A418B1B2BF00D2F503 /* UIColor+Extensions.h */,
+				91D910A518B1B2BF00D2F503 /* UIColor+Extensions.m */,
+				91D910AE18B268F300D2F503 /* UIView+Effects.h */,
+				91D910AF18B268F300D2F503 /* UIView+Effects.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		918A2B0818A806AE00A9112A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		91D9108918B171D300D2F503 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				915C07AF18B9318A00AFE3C4 /* ChorusBaseTableViewCell.h */,
+				915C07B018B9318A00AFE3C4 /* ChorusBaseTableViewCell.m */,
+				91D9108A18B171F300D2F503 /* ChorusSongsCell.h */,
+				91D9108B18B171F300D2F503 /* ChorusSongsCell.m */,
+				91D9108D18B1720600D2F503 /* ChorusSongsCell.xib */,
+				91D910A118B1AF7E00D2F503 /* ChorusIndexSectionHeader.h */,
+				91D910A218B1AF7E00D2F503 /* ChorusIndexSectionHeader.m */,
+				91D910A718B1B95900D2F503 /* ChorusIndexSectionHeader.xib */,
+				91D910A918B1D69D00D2F503 /* ChorusAlbumsCell.h */,
+				91D910AA18B1D69D00D2F503 /* ChorusAlbumsCell.m */,
+				91D910AC18B1D6DE00D2F503 /* ChorusAlbumsCell.xib */,
+				910A60D218B28407001F7CCA /* ChorusAlbumsSongsCell.h */,
+				910A60D318B28407001F7CCA /* ChorusAlbumsSongsCell.m */,
+				910A60D518B28418001F7CCA /* ChorusAlbumsSongsCell.xib */,
+				910A60D718B28F31001F7CCA /* ChorusAlbumSectionHeader.h */,
+				910A60D818B28F31001F7CCA /* ChorusAlbumSectionHeader.m */,
+				910A60DA18B28F45001F7CCA /* ChorusAlbumSectionHeader.xib */,
+				91F5C19018B2E4EE00DF9D27 /* ChorusArtistsCell.h */,
+				91F5C19118B2E4EE00DF9D27 /* ChorusArtistsCell.m */,
+				91F5C19218B2E4EE00DF9D27 /* ChorusArtistsCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		918A2AB218A6C69600A9112A /* chorusMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 918A2ADF18A6C69600A9112A /* Build configuration list for PBXNativeTarget "chorusMediaPlayer" */;
+			buildPhases = (
+				50B2D6DAA617436FB8BD66F8 /* Check Pods Manifest.lock */,
+				918A2AAF18A6C69600A9112A /* Sources */,
+				918A2AB018A6C69600A9112A /* Frameworks */,
+				918A2AB118A6C69600A9112A /* Resources */,
+				BE023F76C81949C3924E7E90 /* Copy Pods Resources */,
+				91431C8318B07AA60031435C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chorusMediaPlayer;
+			productName = chorusTest;
+			productReference = 918A2AB318A6C69600A9112A /* chorusMediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		918A2ACD18A6C69600A9112A /* chorusMediaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 918A2AE218A6C69600A9112A /* Build configuration list for PBXNativeTarget "chorusMediaPlayerTests" */;
+			buildPhases = (
+				918A2ACA18A6C69600A9112A /* Sources */,
+				918A2ACB18A6C69600A9112A /* Frameworks */,
+				918A2ACC18A6C69600A9112A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				918A2AD418A6C69600A9112A /* PBXTargetDependency */,
+			);
+			name = chorusMediaPlayerTests;
+			productName = chorusTestTests;
+			productReference = 918A2ACE18A6C69600A9112A /* chorusMediaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		918A2AAB18A6C69600A9112A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Chorus;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Deepkanwal Plaha";
+				TargetAttributes = {
+					918A2ACD18A6C69600A9112A = {
+						TestTargetID = 918A2AB218A6C69600A9112A;
+					};
+				};
+			};
+			buildConfigurationList = 918A2AAE18A6C69600A9112A /* Build configuration list for PBXProject "chorusMediaPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 918A2AAA18A6C69600A9112A;
+			productRefGroup = 918A2AB418A6C69600A9112A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				918A2AB218A6C69600A9112A /* chorusMediaPlayer */,
+				918A2ACD18A6C69600A9112A /* chorusMediaPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		918A2AB118A6C69600A9112A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910A60DB18B28F45001F7CCA /* ChorusAlbumSectionHeader.xib in Resources */,
+				91D910A818B1B95900D2F503 /* ChorusIndexSectionHeader.xib in Resources */,
+				91F5C19418B2E4EE00DF9D27 /* ChorusArtistsCell.xib in Resources */,
+				91D910AD18B1D6DE00D2F503 /* ChorusAlbumsCell.xib in Resources */,
+				918A2AE718A6C6D800A9112A /* ChorusStoryboard.storyboard in Resources */,
+				918A2AC118A6C69600A9112A /* InfoPlist.strings in Resources */,
+				91D9108E18B1720600D2F503 /* ChorusSongsCell.xib in Resources */,
+				910A60D618B28418001F7CCA /* ChorusAlbumsSongsCell.xib in Resources */,
+				918A2AC918A6C69600A9112A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		918A2ACC18A6C69600A9112A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918A2ADA18A6C69600A9112A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50B2D6DAA617436FB8BD66F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91431C8318B07AA60031435C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run e24d54537c9ebf658e81dcd2bd270750b4bfca2c 9d543e97f627ab801e67474204ac8c9121aedfb2359df3252405917386a1ff67";
+		};
+		BE023F76C81949C3924E7E90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		918A2AAF18A6C69600A9112A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916A006E18AFFC4900AAB3DE /* ChorusBaseTableViewController.m in Sources */,
+				918A2AC718A6C69600A9112A /* ChorusAppDelegate.m in Sources */,
+				915C07B118B9318A00AFE3C4 /* ChorusBaseTableViewCell.m in Sources */,
+				915C07B718B9867E00AFE3C4 /* ChorusWebViewController.m in Sources */,
+				91D910A018B1ADF100D2F503 /* ChorusUIUtility.m in Sources */,
+				918A2AEC18A6D42100A9112A /* ChorusBaseViewController.m in Sources */,
+				918A2AC318A6C69600A9112A /* main.m in Sources */,
+				915C07BA18B9B8F800AFE3C4 /* ChorusTopBarViewController.m in Sources */,
+				91D910A618B1B2BF00D2F503 /* UIColor+Extensions.m in Sources */,
+				91D910A318B1AF7E00D2F503 /* ChorusIndexSectionHeader.m in Sources */,
+				918A2AFF18A714F000A9112A /* UIView+Animations.m in Sources */,
+				918A2AF918A703EB00A9112A /* ChorusAlbumsViewController.m in Sources */,
+				915C07C318B9BFE200AFE3C4 /* ChorusContainerViewController.m in Sources */,
+				91431C8A18B11F930031435C /* ChorusNowPlayingViewController.m in Sources */,
+				918A2B0318A7155C00A9112A /* UIView+Frames.m in Sources */,
+				91D9108C18B171F300D2F503 /* ChorusSongsCell.m in Sources */,
+				910A60D418B28407001F7CCA /* ChorusAlbumsSongsCell.m in Sources */,
+				91D910AB18B1D69D00D2F503 /* ChorusAlbumsCell.m in Sources */,
+				918A2AEF18A6D45D00A9112A /* ChorusSongsViewController.m in Sources */,
+				918A2B1318AB114300A9112A /* ChorusMediaUtility.m in Sources */,
+				91D910B018B268F300D2F503 /* UIView+Effects.m in Sources */,
+				918A2AF618A7036800A9112A /* ChorusArtistsViewController.m in Sources */,
+				915C07BD18B9BC7B00AFE3C4 /* ChorusContainerSegue.m in Sources */,
+				910A60D918B28F31001F7CCA /* ChorusAlbumSectionHeader.m in Sources */,
+				91D9109A18B1A7B400D2F503 /* UINavigationController+ViewControllers.m in Sources */,
+				9124454518BA712F00B26C06 /* ChorusLastFMUtility.m in Sources */,
+				918A2AFC18A714B700A9112A /* ChorusTabBarController.m in Sources */,
+				91F5C19718B59BCA00DF9D27 /* ChorusNowPlayingSegue.m in Sources */,
+				916A007118B0089900AAB3DE /* ChorusAlbumsSongsViewController.m in Sources */,
+				91F5C19318B2E4EE00DF9D27 /* ChorusArtistsCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		918A2ACA18A6C69600A9112A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918A2ADC18A6C69600A9112A /* chorusTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		918A2AD418A6C69600A9112A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 918A2AB218A6C69600A9112A /* chorusMediaPlayer */;
+			targetProxy = 918A2AD318A6C69600A9112A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		918A2ABF18A6C69600A9112A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				918A2AC018A6C69600A9112A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		918A2AD818A6C69600A9112A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				918A2AD918A6C69600A9112A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		918A2ADD18A6C69600A9112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepkanwal Plaha (674D7RJE26)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "BC9AB4DD-7781-4ACE-A867-8005B8900612";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		918A2ADE18A6C69600A9112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepkanwal Plaha (674D7RJE26)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "BC9AB4DD-7781-4ACE-A867-8005B8900612";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		918A2AE018A6C69600A9112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCAB17C734D452192875C3D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepkanwal Plaha (674D7RJE26)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/deepkanwalplaha/Documents/Development/Mobile/iOS/Practice/chorusTest,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chorusMediaPlayer/chorusMediaPlayer-Prefix.pch";
+				INFOPLIST_FILE = "chorusMediaPlayer/chorusMediaPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = chorusMediaPlayer;
+				PROVISIONING_PROFILE = "BC9AB4DD-7781-4ACE-A867-8005B8900612";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		918A2AE118A6C69600A9112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCAB17C734D452192875C3D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepkanwal Plaha (674D7RJE26)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/deepkanwalplaha/Documents/Development/Mobile/iOS/Practice/chorusTest,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chorusMediaPlayer/chorusMediaPlayer-Prefix.pch";
+				INFOPLIST_FILE = "chorusMediaPlayer/chorusMediaPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = chorusMediaPlayer;
+				PROVISIONING_PROFILE = "BC9AB4DD-7781-4ACE-A867-8005B8900612";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		918A2AE318A6C69600A9112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chorusTest.app/chorusTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chorusTest/chorusTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "chorusMediaPlayerTests/chorusMediaPlayerTests-Info.plist";
+				PRODUCT_NAME = chorusMediaPlayerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		918A2AE418A6C69600A9112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chorusTest.app/chorusTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chorusTest/chorusTest-Prefix.pch";
+				INFOPLIST_FILE = "chorusMediaPlayerTests/chorusMediaPlayerTests-Info.plist";
+				PRODUCT_NAME = chorusMediaPlayerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		918A2AAE18A6C69600A9112A /* Build configuration list for PBXProject "chorusMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				918A2ADD18A6C69600A9112A /* Debug */,
+				918A2ADE18A6C69600A9112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		918A2ADF18A6C69600A9112A /* Build configuration list for PBXNativeTarget "chorusMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				918A2AE018A6C69600A9112A /* Debug */,
+				918A2AE118A6C69600A9112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		918A2AE218A6C69600A9112A /* Build configuration list for PBXNativeTarget "chorusMediaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				918A2AE318A6C69600A9112A /* Debug */,
+				918A2AE418A6C69600A9112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 918A2AAB18A6C69600A9112A /* Project object */;
+}
