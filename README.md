@@ -1,6 +1,6 @@
 # ios-music-player
 
-A simple music player app for iOS 7. I've abandoned the project as it was primarily a learning experience to get familiar with storyboards and auto-layout.
+A simple music player app for iOS 7 that I stopped working on midway. Press the right nav bar ^ button to bring up the now playing screen (only shows prev/play/next controls and album art).
 
 ## Screenshots
 
